@@ -1,7 +1,7 @@
 .booked-main-container {
-    width: 100%;
+    width: 60%;
     height: 400px;
-    margin: auto ;
+    margin: 0 auto ;
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;

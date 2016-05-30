@@ -1,5 +1,5 @@
 <section class="packages-main">
-    <section ng-repeat="package in packages" class="package-card">
+    <section ng-repeat="package in info" class="package-card">
         <img src="{{package.image}}"  alt="{{package.city}}">
         <h6> {{package.city}} </h6>
         <h1> {{package.country}}</h1>
@@ -7,6 +7,6 @@
 
         <!--You will need to make the ui-sref work. It should point to the booked state. If you look at your app.js the booked state
        is expecting an id to be passed along You can get that id from the data object that we are repeating over -->
-        <button>Book Now</button>
+        <button ui-sref="booked({id: package.id})">Book Now</button>
     </section>
 </section>
