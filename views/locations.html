@@ -1,7 +1,7 @@
 <section class="locations-container">
     <section ng-repeat="location in info" class="location-card" >
         <div class="image-container">
-            <img src="{{location.image}}" alt="{{location.city}}">
+            <img ng-src="{{location.image}}" alt="{{location.city}}">
         </div>
         <div class="location-inner-left">
             <h6> {{location.city}} </h6>

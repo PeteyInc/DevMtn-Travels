@@ -1,6 +1,6 @@
 <section class="packages-main">
     <section ng-repeat="package in info" class="package-card">
-        <img src="{{package.image}}"  alt="{{package.city}}">
+        <img ng-src="{{package.image}}"  alt="{{package.city}}">
         <h6> {{package.city}} </h6>
         <h1> {{package.country}}</h1>
         <p> {{package.desc}}</p>
